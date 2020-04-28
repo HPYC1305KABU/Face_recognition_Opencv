@@ -1,0 +1,24 @@
+Some basic steps to to run this program:
+
+*Download whole file with the use of github clone.  
+*Check in your system all packages are available which is used in our code(Packages : opencv, numpy, argparse, imutils, pickle, os). 
+
+Follow ONE TO THREE steps for only when you work on your own dataset:
+
+Step 1st : First collect two persons of images and minimum ten images of per person and save the images of both in two different folders with their name. Create a new folder, name is dataset and those two folders put it in that .
+
+*Before run first command, delete all (.pickles) files in output folder.  
+
+*** Download a important model which use in our program and save it in our folder is Face_reocnition_your_own_data_set, (openface_nn4.small2.v1.t7) link is :: (https://github.com/pyannote/pyannote-data/blob/master/openface.nn4.small2.v1.t7)
+
+Step 2nd : Run first command in terminal :: (python extract_embeddings.py --dataset dataset --embeddings output/embeddings.pickle --detector face_detection_model --embedding-model openface_nn4.small2.v1.t7).After this process in output folder exists a new file name is embeddings.pickle.
+
+Step 3rd : Run second command in terminal :: (python train_model.py --embeddings output/embeddings.pickle --recognizer output/recognizer.pickle --le output/le.pickle). After this process in output folder exists a two new file name is le.pickle and recognizer.pickle.
+
+* We add Your own photos in image folder for check accuracy.
+
+* In this command to check our program accuracy(output).
+ 
+Step 4th : Run last and main command in terminal ::(python recognize.py --detector face_detection_model --embedding-model openface_nn4.small2.v1.t7 --recognizer output/recognizer.pickle --le output/le.pickle --image images/adrian.jpg). 
+
+*** Download a IMPORTANT MODEL which use in our program and save it in our folder is Face_reocnition_your_own_data_set, (openface_nn4.small2.v1.t7) link is :: (https://github.com/pyannote/pyannote-data/blob/master/openface.nn4.small2.v1.t7)
