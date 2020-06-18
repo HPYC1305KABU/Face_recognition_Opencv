@@ -1,4 +1,4 @@
-Some basic steps to to run this program:
+Some basic steps to  run this program:
 
 *Download whole file with the use of github clone.  
 *Check in your system all packages are available which is used in our code(Packages : opencv, numpy, argparse, imutils, pickle, os). 
