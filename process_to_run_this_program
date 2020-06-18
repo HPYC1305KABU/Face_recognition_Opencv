@@ -5,7 +5,7 @@ Some basic steps to  run this program:
 
 Follow ONE TO THREE steps for only when you work on create your own face recognition model:
 
-Step 1st : First collect two persons of images and minimum ten images of per person and save the images of both in two different folders with their name. Create a new folder, name is dataset and those two folders put it in that .
+Step 1st : First collect two persons of images and minimum ten images of per person and also collect any ten images except these two persons and save the images of all in three different folders with their names [(harsh),(kabu),(other_images)] Create a new folder, name is dataset and those three folders put it in that.
 
 *Before run first command, delete all (.pickles) files in output folder.  
 
@@ -21,4 +21,3 @@ Step 3rd : Run second command in terminal :: (python train_model.py --embeddings
  
 Step 4th : Run last and main command in terminal ::(python recognize.py --detector face_detection_model --embedding-model openface_nn4.small2.v1.t7 --recognizer output/recognizer.pickle --le output/le.pickle --image images/adrian.jpg). 
 
-*** Download a IMPORTANT MODEL which use in our program and save it in our folder is Face_reocnition_your_own_data_set, (openface_nn4.small2.v1.t7) link is :: (https://github.com/pyannote/pyannote-data/blob/master/openface.nn4.small2.v1.t7)
