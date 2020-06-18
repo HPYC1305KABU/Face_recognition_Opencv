@@ -3,7 +3,7 @@ Some basic steps to  run this program:
 *Download whole file with the use of github clone.  
 *Check in your system all packages are available which is used in our code(Packages : opencv, numpy, argparse, imutils, pickle, os). 
 
-Follow ONE TO THREE steps for only when you work on your own dataset:
+Follow ONE TO THREE steps for only when you work on create your own face recognition model:
 
 Step 1st : First collect two persons of images and minimum ten images of per person and save the images of both in two different folders with their name. Create a new folder, name is dataset and those two folders put it in that .
 
